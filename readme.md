@@ -16,16 +16,21 @@ On terminal run
 ```ssh
 truffle build
 ```
-Truffle terminal
+Truffle terminal\
 ```truffle develop```
 ```migrate --reset```
+
+### Account Creation and Token transfer
+```ssh
+cd scripts
+```
 
 #### Create Account 
 On terminal run
 ```ssh
 node createAccount.js
 ```
-Create Account and details saved on to root file 
+Create Account and details saved in to current folder 
 
 #### Issue Token from Contract
 In file issueToken.js
