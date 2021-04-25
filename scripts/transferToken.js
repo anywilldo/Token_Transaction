@@ -1,11 +1,12 @@
 const Web3 = require("web3");
 var abi = require('./abi.json');
-require('dotenv').config()
+const path = require('path')
+require('dotenv').config({path: path.join(__dirname, '../') + '/.env'})
 const NODE_ADDRESS = process.env.NETWORK;
 const PRIVATE_KEY  = process.env.PRIVATE_KEY;
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
 const USER_ADDRESS = process.env.ADDRESS
-const receiverAddress = '0x5b4b930acc3ccdb78d76b73c167d5e5017592a30'
+const receiverAddress = '0xE3D87f1e33249309Eb1c085951eF638d9c5131C2'
 // Update amount for transfer transaction if needed
 const transferAmount = 1000
 

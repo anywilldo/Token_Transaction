@@ -1,6 +1,7 @@
 const Web3 = require("web3");
 var abi = require('./abi.json');
-require('dotenv').config()
+const path = require('path')
+require('dotenv').config({path: path.join(__dirname, '../') + '/.env'})
 const NODE_ADDRESS = process.env.NETWORK;
 const PRIVATE_KEY  = process.env.PRIVATE_KEY;
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS
